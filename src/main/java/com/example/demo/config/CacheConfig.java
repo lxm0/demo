@@ -4,6 +4,8 @@ import net.sf.ehcache.CacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.net.URL;
+
 /**
  * @author Li
  * @version 1.0
@@ -18,7 +20,9 @@ public class CacheConfig {
      */
     @Bean(name = "ehCacheManager")
     public CacheManager cacheManager() {
-        CacheManager manager = CacheManager.create("F:\\IntelliJ IDEA\\demo\\src\\main\\resources\\ehcache.xml");
+        URL url = getClass().getResource("/ehcache.xml");
+        CacheManager manager =
+                CacheManager.create(url);
         return manager;
     }
 }
