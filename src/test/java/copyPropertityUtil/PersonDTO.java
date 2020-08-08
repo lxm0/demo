@@ -1,4 +1,4 @@
-package com.example.demo.DO;
+package copyPropertityUtil;
 
 import java.util.Date;
 

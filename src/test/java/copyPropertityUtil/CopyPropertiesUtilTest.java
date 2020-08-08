@@ -1,6 +1,6 @@
+package copyPropertityUtil;
+
 import cn.hutool.core.bean.BeanUtil;
-import com.example.demo.DO.PersonDO;
-import com.example.demo.DO.PersonDTO;
 import net.sf.cglib.beans.BeanCopier;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;

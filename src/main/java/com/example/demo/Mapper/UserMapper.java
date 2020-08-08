@@ -1,6 +1,6 @@
 package com.example.demo.Mapper;
 
-import com.example.demo.DO.User;
+import com.example.demo.dmo.User;
 import tk.mybatis.mapper.common.Mapper;
 
 ;

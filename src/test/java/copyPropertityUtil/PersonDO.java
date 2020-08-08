@@ -1,8 +1,9 @@
-package com.example.demo.DO;
+package copyPropertityUtil;
 
 import lombok.Data;
 
 import java.util.Date;
+
 @Data
 public class PersonDO {
     private Integer id;

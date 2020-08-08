@@ -1,4 +1,4 @@
-package com.example.demo.DO;
+package com.example.demo.dmo;
 
 import lombok.Data;
 import tk.mybatis.mapper.annotation.KeySql;

@@ -1,6 +1,6 @@
 package com.example.demo.Controller;
 
-import com.example.demo.DO.User;
+import com.example.demo.dmo.User;
 import com.example.demo.Service.UserService;
 import com.example.demo.Util.EhCacheUtils;
 import com.example.demo.Util.Result;
@@ -10,7 +10,6 @@ import net.sf.ehcache.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -25,13 +24,10 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private ApplicationContext applicationContext;
 
     @RequestMapping("/findById/{id}")
     public Result findById(@PathVariable int id) {
         Result result = userService.findById(id);
-        printCache();
         return result;
     }
 
@@ -44,14 +40,12 @@ public class UserController {
     @PostMapping("/insert")
     public Result insert(@RequestBody User user) {
         Result result = userService.insert(user);
-        printCache();
         return result;
     }
 
     @RequestMapping("/delete")
     public Result delete(@RequestBody User user) {
         Result result = userService.delete(user);
-        printCache();
         return result;
     }
 

@@ -1,6 +1,6 @@
 package com.example.demo.Service.Impl;
 
-import com.example.demo.DO.User;
+import com.example.demo.dmo.User;
 import com.example.demo.Mapper.UserMapper;
 import com.example.demo.Service.UserService;
 import com.example.demo.Util.Result;

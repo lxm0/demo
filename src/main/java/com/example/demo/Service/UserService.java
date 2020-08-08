@@ -1,6 +1,6 @@
 package com.example.demo.Service;
 
-import com.example.demo.DO.User;
+import com.example.demo.dmo.User;
 import com.example.demo.Util.Result;
 
 /**
