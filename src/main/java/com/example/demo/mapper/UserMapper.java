@@ -1,4 +1,4 @@
-package com.example.demo.Mapper;
+package com.example.demo.mapper;
 
 import com.example.demo.dmo.User;
 import tk.mybatis.mapper.common.Mapper;

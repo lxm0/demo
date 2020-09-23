@@ -7,7 +7,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @EnableCaching
-@MapperScan("com.example.demo.Mapper")//tkmybatis的注解
+@MapperScan("com.example.demo.mapper")//tkmybatis的注解
 public class DemoApplication {
 
 	public static void main(String[] args) {

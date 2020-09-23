@@ -1,4 +1,4 @@
-package com.example.demo.Util;
+package com.example.demo.util;
 
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;

@@ -1,9 +1,9 @@
-package com.example.demo.Controller;
+package com.example.demo.controller;
 
 import com.example.demo.dmo.User;
-import com.example.demo.Service.UserService;
-import com.example.demo.Util.EhCacheUtils;
-import com.example.demo.Util.Result;
+import com.example.demo.service.UserService;
+import com.example.demo.util.EhCacheUtils;
+import com.example.demo.util.Result;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;

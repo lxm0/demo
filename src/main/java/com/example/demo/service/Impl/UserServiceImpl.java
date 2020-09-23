@@ -1,9 +1,9 @@
-package com.example.demo.Service.Impl;
+package com.example.demo.service.impl;
 
 import com.example.demo.dmo.User;
-import com.example.demo.Mapper.UserMapper;
-import com.example.demo.Service.UserService;
-import com.example.demo.Util.Result;
+import com.example.demo.mapper.UserMapper;
+import com.example.demo.service.UserService;
+import com.example.demo.util.Result;
 import org.springframework.beans.factory.Aware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;

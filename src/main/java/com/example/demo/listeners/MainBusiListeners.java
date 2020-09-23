@@ -1,6 +1,6 @@
-package com.example.demo.Listeners;
+package com.example.demo.listeners;
 
-import com.example.demo.Util.ApplicationContextUtils;
+import com.example.demo.util.ApplicationContextUtils;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 

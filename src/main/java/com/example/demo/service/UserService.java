@@ -1,7 +1,7 @@
-package com.example.demo.Service;
+package com.example.demo.service;
 
 import com.example.demo.dmo.User;
-import com.example.demo.Util.Result;
+import com.example.demo.util.Result;
 
 /**
  * @author Li
