@@ -13,7 +13,7 @@ import java.io.Serializable;
  * @date 2020/8/1 14:29
  */
 @Data
-@Table
+@Table(name = "d_user")
 public class User implements Serializable {
     @Id
     @KeySql(useGeneratedKeys = true)

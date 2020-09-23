@@ -11,5 +11,5 @@ import tk.mybatis.mapper.common.Mapper;
  * @date 2020/8/1 14:34
  */
 
-public interface UserMapper extends Mapper<User> {
+public interface UserMapper extends Mapper<User>,InsertListMapper<User> ,UpdateBatchByPrimaryKeySelectiveMapper<User>{
 }
