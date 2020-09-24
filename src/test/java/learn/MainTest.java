@@ -1,5 +1,7 @@
 package learn;
 
+import org.junit.Test;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,5 +28,12 @@ public class MainTest {
         } else {
             return target.keySet().size();
         }
+    }
+    @Test
+    public void test01(){
+        String str = "str";
+        Object o = str;
+        String d = (String) o;
+        System.out.println(d);
     }
 }

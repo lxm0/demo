@@ -4,6 +4,9 @@ import com.example.demo.dmo.User;
 import com.example.demo.service.UserService;
 import com.example.demo.util.EhCacheUtils;
 import com.example.demo.util.Result;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Element;
@@ -19,6 +22,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/user")
+@Api(tags = "用户")
 public class UserController {
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
@@ -26,7 +30,8 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/findById/{id}")
-    public Result findById(@PathVariable int id) {
+    @ApiOperation(value = "获取用户信息")
+    public Result findById(@ApiParam(value = "用户ID",required = true) @PathVariable int id) {
         Result result = userService.findById(id);
         return result;
     }
@@ -63,4 +68,5 @@ public class UserController {
             System.out.println(element.getObjectValue());
         }
     }
+
 }
