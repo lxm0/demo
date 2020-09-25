@@ -1,9 +1,11 @@
 package learn;
 
+import lombok.Synchronized;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.SynchronousQueue;
 
 /**
  * @author Li
@@ -30,10 +32,37 @@ public class MainTest {
         }
     }
     @Test
-    public void test01(){
+    public void  test01() throws InterruptedException {
         String str = "str";
         Object o = str;
-        String d = (String) o;
-        System.out.println(d);
+        for (int i = 0; i < 100; i++) {
+            Integer integer = new Integer(i);
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                        lock(o,integer);
+                        //System.out.println(o);
+
+                }
+            }).start();
+        }
+
+    }
+    public void lock(Object o,Integer i){
+        System.out.print(i);
+        synchronized (o) {
+            if (i/2==0){
+                System.out.println(i+"o wait");
+                try {
+                    o.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }else {
+                System.out.println(i+"o notify");
+                o.notify();
+            }
+
+        }
     }
 }
