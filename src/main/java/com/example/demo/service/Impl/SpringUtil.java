@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.demo.service.impl;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
