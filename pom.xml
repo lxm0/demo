@@ -176,15 +176,20 @@
 			<!--<artifactId>elasticsearch-rest-client</artifactId>-->
 			<!--<version>6.2.3</version>-->
 		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+		</dependency>
 		<!--<dependency>-->
 			<!--<groupId>com.github.vanroy</groupId>-->
 			<!--<artifactId>spring-data-jest</artifactId>-->
 			<!--<version>3.3.2.RELEASE</version>-->
 		<!--</dependency>-->
+		<dependency>
+			<groupId>io.searchbox</groupId>
+			<artifactId>jest</artifactId>
+			<version>6.3.1</version>
+		</dependency>
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
